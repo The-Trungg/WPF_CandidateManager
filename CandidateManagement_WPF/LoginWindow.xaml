@@ -1,0 +1,23 @@
+﻿<Window x:Class="CandidateManagement_WPF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CandidateManagement_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="/Background3.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="237,137,0,0" VerticalAlignment="Top" FontSize="16" Height="36" Width="72"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Center" Margin="0,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Text="admin@hr.com.vn" Height="27" />
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="237,210,0,0" VerticalAlignment="Top" FontSize="16" Height="34" Width="112"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="447,321,0,0" VerticalAlignment="Top" Click="Button_Click" Height="26" Width="87" Background="#FF8184ED" Style="{StaticResource RoundedButtonStyle}" />
+        <Button Content="Quit" HorizontalAlignment="Left" Margin="266,321,0,0" VerticalAlignment="Top" Height="26" Width="82" Click="Button_Click_1" Style="{StaticResource RoundedButtonStyle}"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="0,257,0,0" VerticalAlignment="Top" Width="268" Height="27"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" FontSize="56" FontWeight="Bold" Foreground="#FFBB7A13" Height="92" Width="204"/>
+        <Rectangle HorizontalAlignment="Center" Height="326" VerticalAlignment="Center" Width="500" Stroke="#FF22214A" Fill="#FFADE3E9" Opacity="0.5" RadiusX="2" Panel.ZIndex="-1"/>
+
+    </Grid>
+</Window>

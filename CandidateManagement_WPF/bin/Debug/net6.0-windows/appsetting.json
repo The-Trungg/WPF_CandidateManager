@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DBConnect": "Server=DESKTOP-0ATFOCT\\SQLEXPRESS;Database=CandidateManagement;Uid=sa;Pwd=12345;"
+  }
+}

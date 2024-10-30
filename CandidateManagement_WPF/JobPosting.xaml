@@ -1,0 +1,26 @@
+﻿<Window x:Class="CandidateManagement_WPF.JobPosting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CandidateManagement_WPF"
+        mc:Ignorable="d"
+        Title="JobPosting" Height="575" Width="800">
+    <Grid Margin="0,19,0,20">
+        <Label Content="PostingID" HorizontalAlignment="Left" Margin="56,62,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Job Posting Title" HorizontalAlignment="Left" Margin="56,132,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Description" HorizontalAlignment="Left" Margin="498,132,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Posted Date" HorizontalAlignment="Left" Margin="493,62,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Job Posting" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="32" FontWeight="Bold"/>
+        <ComboBox x:Name="idPosting" HorizontalAlignment="Left" Margin="119,98,0,0" VerticalAlignment="Top" Width="190" Height="24"/>
+        <TextBox x:Name="txtPostingTitle" HorizontalAlignment="Left" Margin="119,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="24"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="535,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="70"/>
+        <DatePicker x:Name="datePosted" HorizontalAlignment="Left" Margin="535,98,0,0" VerticalAlignment="Top" Width="190" Height="24"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,260,0,0" Height="189" VerticalAlignment="Top"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="640,455,0,0" VerticalAlignment="Top" Height="50" Width="150" FontSize="16" />
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="436,455,0,0" VerticalAlignment="Top" Height="50" Width="150" FontSize="16" Background="#FFFD5E5E"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="223,455,0,0" VerticalAlignment="Top" Height="50" Width="150" FontSize="16" Background="#FF54F33F"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="11,455,0,0" VerticalAlignment="Top" Height="50" Width="150" FontSize="16" Background="#FF3686E5"/>
+
+    </Grid>
+</Window>
